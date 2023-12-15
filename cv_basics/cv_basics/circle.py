@@ -55,7 +55,7 @@ def main(args=None):
     radius = 4.5  # Radius of the circle
     max_linear_speed = 1.5  # Max linear speed
     max_deceleration = 0.05  # Deceleration rate
-    noise_std_dev = 3.0  # Noise standard deviation
+    noise_std_dev = 10.0  # Noise standard deviation
 
     turtle_circle_controller = TurtleCircleController(radius, max_linear_speed, max_deceleration, noise_std_dev)
 
