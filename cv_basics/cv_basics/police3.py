@@ -100,7 +100,7 @@ class TurtleChaser(Node):
         vel_msg.angular.z = 0.0
      else:
         vel_msg.angular.z = self.angular_velocity_gain * angle_diff
-        vel_msg.linear.x = min(3 * distance, 3.0)  # Limit max speed
+        vel_msg.linear.x = min(3 * distance, 2.0)  # Limit max speed
 
      self.chaser_velocity_publisher.publish(vel_msg)
 
