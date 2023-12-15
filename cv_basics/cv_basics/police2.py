@@ -82,7 +82,7 @@ class TurtleChaser(Node):
             # Continue chasing
             angle_to_target = math.atan2(future_y - self.chaser_pose.y, future_x - self.chaser_pose.x)
             vel_msg.angular.z = self.angular_velocity_gain * (angle_to_target - self.chaser_pose.theta)
-            vel_msg.linear.x = min(5 * distance, 2.5)  # Limit max speed
+            vel_msg.linear.x = min(5 * distance, 1.5)  # Limit max speed
 
         self.chaser_velocity_publisher.publish(vel_msg)
 
